@@ -1,6 +1,10 @@
 ## Issue 4: ConfigMap Changes Not Reflected
 > Symptoms: After updating a ConfigMap, the changes are not reflected in the pods using it.
 
+Two reasons are most common: [LINK](https://pauldally.medium.com/my-kubernetes-application-is-not-seeing-configmap-or-secret-updates-785da0c496ae#:~:text=Two%20reasons%20are%20most%20common,the%20file%20whenever%20it%20changes.)
+1. The ConfigMap or Secret is being used as a subPath volumeMount. These mounts are not updated automatically.
+2. The application is coded to cache the ConfigMap or Secret at container startup and does not re-read the file whenever it changes.
+
 There are a few reasons why ConfigMap changes might not be reflected in pods using it:
 
 * The pods are not configured to mount the ConfigMap.
