@@ -1,4 +1,4 @@
-> Issue 1: Pods Not Starting
+> ## Issue 1: Pods Not Starting
 Symptoms: A user deploys a new pod using a manifest, but the pod remains in the Pending state. 
 
 ## [Debug Pods](https://kubernetes.io/docs/tasks/debug/debug-application/debug-pods/#:~:text=If%20a%20Pod%20is%20stuck,or%20another%20that%20prevent%20scheduling.)
