@@ -20,7 +20,7 @@ Here are some specific troubleshooting tips:
 
 Make sure that the image exists in the container registry.
 Make sure that the Kubernetes node has access to the container registry. You can check this by running the following command:
-kubectl exec -it <pod-name> -- ping <container-registry-hostname>
+`kubectl exec -it <pod-name> -- ping <container-registry-hostname>`
 If the command fails, there is a problem with the network between the Kubernetes node and the container registry.
 
 Make sure that the Kubernetes configuration is correct. You can check this by running the following command:

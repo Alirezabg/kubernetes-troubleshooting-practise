@@ -10,10 +10,10 @@ To troubleshoot RBAC permissions errors, you can follow these steps:
 
 Identify the resource or operation that is being denied. You can do this by examining the error message in the pod logs.
 Verify that the pod has the correct role and role binding assignments. You can use the following commands to check the role and role binding assignments for a pod:
-kubectl get rolebindings -n <namespace>
-kubectl get roles -n <namespace>
+`kubectl get rolebindings -n <namespace>`
+`kubectl get roles -n <namespace>`
 Verify that the pod has the required permissions for the resource or operation. You can use the following command to check the permissions for a role or role binding:
-kubectl describe role <role-name> -n <namespace>
+`kubectl describe role <role-name> -n <namespace>`
 Grant the pod the required permissions. You can do this by creating a new role binding or by adding the required permissions to an existing role binding.
 Here are some specific troubleshooting tips for RBAC permissions errors:
 

@@ -23,5 +23,5 @@ Here are some specific troubleshooting tips for the symptoms you described:
 If the pod keeps restarting frequently, it is possible that the liveness probe is configured to run too often. Try increasing the interval or initialDelay of the probe.
 If the liveness probe is timing out, it is possible that the application is taking too long to respond to the probe. Try increasing the timeoutSeconds of the probe.
 If the liveness probe is failing with an HTTP error, make sure that the application is actually listening on the port that the probe is targeting. You can use the following command to check if the application is listening on a port:
-kubectl exec -it <pod-name> -- netstat -an | grep :<port>
+`kubectl exec -it <pod-name> -- netstat -an | grep :<port>`
 If the application is not listening on the port, you need to update the probe configuration to target the correct port.

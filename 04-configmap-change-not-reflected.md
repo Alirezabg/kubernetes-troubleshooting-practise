@@ -21,9 +21,9 @@ If the application is caching the ConfigMap values, you will need to update the 
 Here are some specific troubleshooting tips:
 
 If you are using a Deployment, StatefulSet, or DaemonSet, you can restart the pods by running the following command:
-kubectl rollout restart deployment/statefulset/daemonset <name>
-If you are using a standalone pod, you can restart the pod by running the following command:
-kubectl restart pod <name>
-If you are using a subPath mount, you can update the subPath file by running the following command:
-kubectl exec -it <pod-name> -- echo "<new-value>" > /path/to/subPath/file
-If the application is caching the ConfigMap values, you will need to consult the application documentation to learn how to reload the ConfigMap values.
+`kubectl rollout restart deployment/statefulset/daemonset <name>
+`If you are using a standalone pod, you can restart the pod by running the following command:
+`kubectl restart pod <name>
+`If you are using a subPath mount, you can update the subPath file by running the following command:
+`kubectl exec -it <pod-name> -- echo "<new-value>" > /path/to/subPath/file
+`If the application is caching the ConfigMap values, you will need to consult the application documentation to learn how to reload the ConfigMap values.

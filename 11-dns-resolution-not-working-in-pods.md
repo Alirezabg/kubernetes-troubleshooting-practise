@@ -22,11 +22,11 @@ If the pods are using a custom DNS resolver, verify that it is configured correc
 
 Verify that there is no network connectivity issue between the pods and CoreDNS. You can do this by running the following command on one of the pods:
 
-ping <IP address of CoreDNS pod>
+`ping <IP address of CoreDNS pod>`
 If the ping fails, there is a network connectivity issue between the pods and CoreDNS.
 
 Verify that the Kubernetes networking plugin is working correctly. You can check the status of the Kubernetes networking plugin by running the following command:
-kubectl get pods -n kube-system -l component=kube-proxy
+`kubectl get pods -n kube-system -l component=kube-proxy`
 If the pod is not running or is in an unhealthy state, there is a problem with the Kubernetes networking plugin.
 
 If you are still having trouble troubleshooting DNS resolution failures in pods, you can consult the Kubernetes documentation or ask for help on the Kubernetes community forums.

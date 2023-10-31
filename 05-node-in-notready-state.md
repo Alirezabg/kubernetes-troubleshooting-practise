@@ -11,7 +11,7 @@ There is a problem with the node's underlying infrastructure (e.g., a hardware f
 To troubleshoot a node in a NotReady state, you can use the following steps:
 
 Run the following command to get more information about the node:
-kubectl describe node <node-name>
+`kubectl describe node <node-name>`
 Look for any events in the output that indicate why the node is in a NotReady state. For example, if the kubelet service is not running, you will see an event like the following:
 NodeNotReady 5m ago  kubelet, <node-name>  Node is not ready: Kubelet has failed to register
 Once you have identified the reason why the node is in a NotReady state, you can take steps to fix the issue. For example, if the kubelet service is not running, you can start the kubelet service.
