@@ -3,11 +3,12 @@
 
 A Kubernetes node in a NotReady state means that the node cannot be used to run pods. This can happen for a number of reasons, including:
 
-The kubelet service is not running on the node.
-The node has insufficient resources (CPU, memory, etc.).
-The node has a network connectivity issue.
-The node's kubelet is unable to connect to the Kubernetes API server.
-There is a problem with the node's underlying infrastructure (e.g., a hardware failure).
+* The kubelet service is not running on the node.
+* The node has insufficient resources (CPU, memory, etc.).
+* The node has a network connectivity issue.
+* The node's kubelet is unable to connect to the Kubernetes API server.
+* There is a problem with the node's underlying infrastructure (e.g., a hardware failure).
+
 To troubleshoot a node in a NotReady state, you can use the following steps:
 
 Run the following command to get more information about the node:
