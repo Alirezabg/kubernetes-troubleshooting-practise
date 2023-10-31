@@ -1,5 +1,5 @@
-Issue 9: Persistent Volume (PV) Not Bound
-Symptoms: A pod that requires persistent storage is in Pending state, and its associated Persistent Volume Claim (PVC) is in Pending state as well.
+## Issue 9: Persistent Volume (PV) Not Bound
+> Symptoms: A pod that requires persistent storage is in Pending state, and its associated Persistent Volume Claim (PVC) is in Pending state as well.
 
 There are a few reasons why a Persistent Volume (PV) might not be bound:
 

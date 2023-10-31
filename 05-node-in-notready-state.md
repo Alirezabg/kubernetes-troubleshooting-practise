@@ -1,5 +1,5 @@
-Issue 5: Node in NotReady State
-Symptoms: One of the cluster nodes is in a NotReady state when running kubectl get nodes.
+## Issue 5: Node in NotReady State
+> Symptoms: One of the cluster nodes is in a NotReady state when running kubectl get nodes.
 
 A Kubernetes node in a NotReady state means that the node cannot be used to run pods. This can happen for a number of reasons, including:
 
@@ -23,4 +23,3 @@ If the node has insufficient resources, you can add more resources to the node o
 If the node has a network connectivity issue, you can check the node's network configuration and troubleshoot any network connectivity issues.
 If the node's kubelet is unable to connect to the Kubernetes API server, you can check the connectivity between the node and the Kubernetes API server and troubleshoot any connectivity issues.
 If there is a problem with the node's underlying infrastructure, you will need to contact your cloud provider or hardware vendor for assistance.
-If you are still having trouble troubleshooting a node in a NotReady state, you can consult the Kubernetes documentation or ask for help on the Kubernetes community forums.

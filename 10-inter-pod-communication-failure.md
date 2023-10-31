@@ -1,5 +1,5 @@
-Issue 10: Inter-Pod Communication Failure
-Symptoms: One pod cannot communicate with another pod via its service name, although both pods are running without errors.
+## Issue 10: Inter-Pod Communication Failure
+> Symptoms: One pod cannot communicate with another pod via its service name, although both pods are running without errors.
 
 There are a number of reasons why inter-pod communication might fail, including:
 

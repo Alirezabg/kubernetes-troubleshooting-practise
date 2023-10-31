@@ -1,5 +1,5 @@
-Issue 12: Horizontal Pod Autoscaler Not Scaling
-Symptoms: Despite heavy load, the Horizontal Pod Autoscaler (HPA) doesn’t scale up the replicas of the deployment or the pods.
+## Issue 12: Horizontal Pod Autoscaler Not Scaling
+> Symptoms: Despite heavy load, the Horizontal Pod Autoscaler (HPA) doesn’t scale up the replicas of the deployment or the pods.
 
 
 

@@ -1,5 +1,5 @@
-Issue 6: Cannot Pull Image
-Symptoms: A pod is in an ImagePullBackOff or ErrImagePull state.
+## Issue 6: Cannot Pull Image
+> Symptoms: A pod is in an ImagePullBackOff or ErrImagePull state.
 
 
 A pod in an ImagePullBackOff or ErrImagePull state means that Kubernetes cannot pull the container image for the pod. This can happen for a number of reasons, including:
@@ -38,4 +38,3 @@ The output of this command should contain the following section:
     proxyMode: "iptables"
 If any of these values are incorrect, you can update the configmap and restart the kube-proxy service.
 
-If you are still having trouble troubleshooting a pod in an ImagePullBackOff or ErrImagePull state, you can consult the Kubernetes documentation or ask for help on the Kubernetes community forums.

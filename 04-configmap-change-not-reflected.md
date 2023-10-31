@@ -1,5 +1,5 @@
-Issue 4: ConfigMap Changes Not Reflected
-Symptoms: After updating a ConfigMap, the changes are not reflected in the pods using it.
+## Issue 4: ConfigMap Changes Not Reflected
+> Symptoms: After updating a ConfigMap, the changes are not reflected in the pods using it.
 
 There are a few reasons why ConfigMap changes might not be reflected in pods using it:
 
@@ -22,4 +22,3 @@ kubectl restart pod <name>
 If you are using a subPath mount, you can update the subPath file by running the following command:
 kubectl exec -it <pod-name> -- echo "<new-value>" > /path/to/subPath/file
 If the application is caching the ConfigMap values, you will need to consult the application documentation to learn how to reload the ConfigMap values.
-If you are still having trouble troubleshooting this issue, you can consult the Kubernetes documentation or ask for help on the Kubernetes community forums.

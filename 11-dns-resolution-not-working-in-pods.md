@@ -1,5 +1,5 @@
-Issue 11: DNS Resolution Not Working in Pods
-Symptoms: Applications within pods are unable to resolve domain names, leading to failures when trying to access external services.
+## Issue 11: DNS Resolution Not Working in Pods
+> Symptoms: Applications within pods are unable to resolve domain names, leading to failures when trying to access external services.
 
 There are a number of reasons why DNS resolution might not be working in pods, including:
 

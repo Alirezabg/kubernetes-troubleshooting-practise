@@ -1,5 +1,5 @@
-Issue 7: Pods in CrashLoopBackOff State
-Symptoms: After deploying a new application or updating an existing one, the pod consistently restarts and is in a CrashLoopBackOff state.
+## Issue 7: Pods in CrashLoopBackOff State
+> Symptoms: After deploying a new application or updating an existing one, the pod consistently restarts and is in a CrashLoopBackOff state.
 
 
 Pods in a CrashLoopBackOff state means that Kubernetes is continuously trying to restart the pods, but the pods are failing to start successfully. This can happen for a number of reasons, including:
@@ -35,4 +35,3 @@ If you are still having trouble troubleshooting pods in a CrashLoopBackOff state
 Restart the Kubernetes API server and controller manager.
 Delete the pods and try deploying them again.
 Upgrade to the latest version of Kubernetes.
-If you are still having trouble, you can ask for help on the Kubernetes community forums.

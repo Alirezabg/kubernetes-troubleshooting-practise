@@ -1,5 +1,5 @@
-Issue 3: Liveness Probe Failing
-Symptoms: A pod keeps restarting frequently, and the description indicates the liveness probe is failing.
+## Issue 3: Liveness Probe Failing
+> Symptoms: A pod keeps restarting frequently, and the description indicates the liveness probe is failing.
 
 
 
@@ -23,5 +23,3 @@ If the liveness probe is timing out, it is possible that the application is taki
 If the liveness probe is failing with an HTTP error, make sure that the application is actually listening on the port that the probe is targeting. You can use the following command to check if the application is listening on a port:
 kubectl exec -it <pod-name> -- netstat -an | grep :<port>
 If the application is not listening on the port, you need to update the probe configuration to target the correct port.
-
-If you are still having trouble troubleshooting a failing liveness probe, you can consult the Kubernetes documentation or ask for help on the Kubernetes community forums.
