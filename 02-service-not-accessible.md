@@ -15,15 +15,15 @@ If a service is deployed but users cannot access the app using the service's Clu
 
 To troubleshoot a service that is not accessible, you can use the following steps:
 
-Run the following command to get more information about the service:
-`kubectl describe service <service-name>`
-Look for any events in the output that indicate why the service is not accessible. For example, if the service is not ready, you will see an event like the following:
-Endpoints for service <service-name> are not ready yet.
+Run the following command to get more information about the service:<br />
+`kubectl describe service <service-name>`<br />
+Look for any events in the output that indicate why the service is not accessible. For example, if the service is not ready, you will see an event like the following:<br />
+Endpoints for service <service-name> are not ready yet.<br />
 
-Once you have identified the reason why the service is not accessible, you can take steps to fix the issue. For example, if the service is not ready, you need to wait for the pods that the service is targeting to come up and be ready.
+Once you have identified the reason why the service is not accessible, you can take steps to fix the issue. For example, if the service is not ready, you need to wait for the pods that the service is targeting to come up and be ready.<br />
 Here are some specific troubleshooting tips for the symptoms you described:
 
-If users cannot access the app using the service's Cluster IP, make sure that the service is exposed to the outside world. You can do this by setting the type field in the service manifest to LoadBalancer.
+If users cannot access the app using the service's Cluster IP, make sure that the service is exposed to the outside world. You can do this by setting the type field in the service manifest to LoadBalancer.<br />
 If users cannot access the app using the service's NodePort, make sure that the NodePorts are exposed to the outside world. You can do this by configuring your firewall to allow traffic to the NodePorts.
-If you are using a load balancer, make sure that the load balancer is configured correctly and that the service's NodePorts are mapped to the load balancer's ports.
+If you are using a load balancer, make sure that the load balancer is configured correctly and that the service's NodePorts are mapped to the load balancer's ports.<br />
 If the pods that the service is targeting are not running, the service will not be accessible. Make sure that the pods are running and that they are healthy.
