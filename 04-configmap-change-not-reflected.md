@@ -3,10 +3,11 @@
 
 There are a few reasons why ConfigMap changes might not be reflected in pods using it:
 
-The pods are not configured to mount the ConfigMap.
-The pods are running with a cached version of the ConfigMap.
-The pods are using a subPath mount, which is not updated automatically.
-The application is caching the ConfigMap values and not reloading them when the ConfigMap changes.
+* The pods are not configured to mount the ConfigMap.
+* The pods are running with a cached version of the ConfigMap.
+* The pods are using a subPath mount, which is not updated automatically.
+* The application is caching the ConfigMap values and not reloading them when the ConfigMap changes.
+
 To troubleshoot this issue, you can try the following steps:
 
 Make sure that the pods are configured to mount the ConfigMap. You can check this by looking at the pod manifest. The ConfigMap mount should be defined in the volumeMounts section of the pod spec.

@@ -1,7 +1,9 @@
 ## Issue 3: Liveness Probe Failing
 > Symptoms: A pod keeps restarting frequently, and the description indicates the liveness probe is failing.
 
+## [Configure Liveness, Readiness and Startup Probes](https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/)
 
+##
 
 A failing liveness probe indicates that Kubernetes considers the container to be unhealthy and restarts it. This can happen for a number of reasons, including:
 
