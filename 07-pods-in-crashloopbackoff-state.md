@@ -4,9 +4,10 @@
 
 Pods in a CrashLoopBackOff state means that Kubernetes is continuously trying to restart the pods, but the pods are failing to start successfully. This can happen for a number of reasons, including:
 
-The application is crashing for some reason.
-The application is not compatible with the Kubernetes environment.
-There is a problem with the Kubernetes configuration.
+* The application is crashing for some reason.
+* The application is not compatible with the Kubernetes environment.
+* There is a problem with the Kubernetes configuration.
+
 To troubleshoot pods in a CrashLoopBackOff state, you can use the following steps:
 
 Run the following command to get more information about the pods:
@@ -26,10 +27,10 @@ If you are still having trouble troubleshooting pods in a CrashLoopBackOff state
 
 Here are some additional troubleshooting tips:
 
-Make sure that the pods have enough resources (CPU, memory, etc.) to run successfully.
-Make sure that the pods are not running into any resource conflicts (e.g., two pods trying to bind to the same port).
-Make sure that the pods have access to the necessary resources (e.g., databases, filesystems, etc.).
-Make sure that the Kubernetes nodes are healthy and have enough resources to run the pods.
+* Make sure that the pods have enough resources (CPU, memory, etc.) to run successfully.
+* Make sure that the pods are not running into any resource conflicts (e.g., two pods trying to bind to the same port).
+* Make sure that the pods have access to the necessary resources (e.g., databases, filesystems, etc.).
+* Make sure that the Kubernetes nodes are healthy and have enough resources to run the pods.
 If you are still having trouble troubleshooting pods in a CrashLoopBackOff state, you can try the following:
 
 Restart the Kubernetes API server and controller manager.

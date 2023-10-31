@@ -5,11 +5,12 @@
 
 There are a number of reasons why the Horizontal Pod Autoscaler (HPA) might not scale up the replicas of a deployment or pods, including:
 
-The HPA is not configured correctly.
-The HPA is unable to retrieve the metrics it needs to make scaling decisions.
-The HPA is being rate limited.
-The HPA is configured to scale down, but not scale up.
-There is a problem with the Kubernetes cluster.
+* The HPA is not configured correctly.
+* The HPA is unable to retrieve the metrics it needs to make scaling decisions.
+* The HPA is being rate limited.
+* The HPA is configured to scale down, but not scale up.
+* There is a problem with the Kubernetes cluster.
+
 To troubleshoot a HPA that is not scaling up, you can use the following steps:
 
 Verify that the HPA is configured correctly. You can check the HPA's configuration by running the following command:

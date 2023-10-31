@@ -3,11 +3,11 @@
 
 There are a number of reasons why DNS resolution might not be working in pods, including:
 
-The CoreDNS pods are not running or are in an unhealthy state.
-The pods are not configured to use CoreDNS.
-The pods are using a custom DNS resolver that is not configured correctly.
-There is a network connectivity issue between the pods and CoreDNS.
-There is a problem with the Kubernetes networking plugin.
+* The CoreDNS pods are not running or are in an unhealthy state.
+* The pods are not configured to use CoreDNS.
+* The pods are using a custom DNS resolver that is not configured correctly.
+* There is a network connectivity issue between the pods and CoreDNS.
+* There is a problem with the Kubernetes networking plugin.
 To troubleshoot DNS resolution failures in pods, you can use the following steps:
 
 Verify that the CoreDNS pods are running and healthy. You can do this by running the following command:

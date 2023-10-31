@@ -3,11 +3,11 @@
 
 There are a few reasons why a Persistent Volume (PV) might not be bound:
 
-The PVC has incompatible access modes with the PV.
-The PVC has incompatible resource requests with the PV.
-The PV and PVC are in different namespaces.
-The PV and PVC have different labels.
-There are no PVs that match the PVC's requirements.
+* The PVC has incompatible access modes with the PV.
+* The PVC has incompatible resource requests with the PV.
+* The PV and PVC are in different namespaces.
+* The PV and PVC have different labels.
+* There are no PVs that match the PVC's requirements.
 To troubleshoot a PV that is not bound, you can use the following steps:
 
 Verify that the PVC has compatible access modes with the PV. The PVC's access mode must be one or more of the PV's access modes. You can check the PVC's access mode by running the following command:

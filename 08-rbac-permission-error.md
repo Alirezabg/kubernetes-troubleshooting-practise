@@ -3,9 +3,9 @@
 
 RBAC permissions errors are common in Kubernetes, and can be caused by a variety of factors, including:
 
-Incorrect role or role binding assignments
-Missing permissions for a specific resource or operation
-Namespaces not being explicitly granted access to resources
+* Incorrect role or role binding assignments
+* Missing permissions for a specific resource or operation
+* Namespaces not being explicitly granted access to resources
 To troubleshoot RBAC permissions errors, you can follow these steps:
 
 Identify the resource or operation that is being denied. You can do this by examining the error message in the pod logs.

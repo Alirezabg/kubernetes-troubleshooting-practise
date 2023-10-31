@@ -7,9 +7,9 @@
 
 A failing liveness probe indicates that Kubernetes considers the container to be unhealthy and restarts it. This can happen for a number of reasons, including:
 
-The application is actually unhealthy and is unable to respond to the probe.
-The probe is configured incorrectly and is failing even though the application is healthy.
-There is a problem with the network between the Kubernetes node and the probe.
+* The application is actually unhealthy and is unable to respond to the probe.
+* The probe is configured incorrectly and is failing even though the application is healthy.
+* There is a problem with the network between the Kubernetes node and the probe.
 To troubleshoot a failing liveness probe, you can use the following steps:
 
 Run the following command to get more information about the pod:
