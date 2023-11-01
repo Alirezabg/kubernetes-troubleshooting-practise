@@ -1,0 +1,13 @@
+The nodeAffinity field in this manifest file specifies that the pod can only be scheduled to a node that has the label kubernetes.io/e2e-az-name with the value e2e-az1. However, if there are no nodes in the cluster with this label, the pod will remain in a pending state due to a node scheduling conflict.
+
+To resolve this issue, you can either:
+
+Add a node to the cluster with the label kubernetes.io/e2e-az-name with the value e2e-az1.
+Remove the nodeAffinity field from the manifest file.
+Change the nodeAffinity field to a less restrictive set of constraints.
+Once you have made the necessary changes to the manifest file, you can apply it to the cluster using the following command:
+
+`kubectl apply -f .`
+If you have resolved the node scheduling conflict, the pod should start running.
+
+Note: It is important to carefully consider the node affinity constraints that you specify in your Kubernetes manifest files. Over-specifying node affinity constraints can make it difficult to schedule pods, especially in large clusters. It is also important to make sure that the node affinity constraints are compatible with the labels that are assigned to your nodes.

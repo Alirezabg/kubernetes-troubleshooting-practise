@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: my-app-issue3
+  namespace: issue
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: my-app-issue3
+  template:
+    metadata:
+      labels:
+        app: my-app-issue3
+    spec:
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+            - matchExpressions:
+              - key: kubernetes.io/e2e-az-name
+                operator: In
+                values:
+                - e2e-az1
+      containers:
+      - name: my-app-issue3
+        image: nginx
+        ports:
+        - containerPort: 80
