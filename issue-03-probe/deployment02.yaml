@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: faulty-probe  
+spec:
+  containers:
+  - name: app
+    image: healthy-app-image
+    livenessProbe:
+      httpGet:
+        path: /wrong-path 
+        port: 8080 
+      initialDelaySeconds: 10
+      periodSeconds: 5
